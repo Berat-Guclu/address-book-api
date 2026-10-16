@@ -10,7 +10,7 @@ A small REST API for an address book. There is no frontend. Swagger is the clien
 dotnet run
 ```
 
-Swagger is at http://localhost:5044/swagger. The site root redirects there. `GET /health` returns `{ "status": "ok" }`.
+Swagger is at http://ec2-13-61-21-117.eu-north-1.compute.amazonaws.com:5000/swagger/index.html
 
 ## Design
 
