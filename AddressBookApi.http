@@ -1,0 +1,27 @@
+@host = http://localhost:5044
+
+GET {{host}}/api/addresses
+Accept: application/json
+
+###
+
+GET {{host}}/api/addresses?search=london&sortBy=name&sortDirection=asc
+
+###
+
+POST {{host}}/api/addresses
+Content-Type: application/json
+
+{
+  "name": "Katherine Johnson",
+  "company": "NASA",
+  "street": "1 Langley Blvd",
+  "city": "Hampton",
+  "region": "Virginia",
+  "postalCode": "23666",
+  "country": "United States",
+  "phone": "+1 757 555 0199",
+  "email": "katherine@example.com",
+  "notes": "Orbital mechanics",
+  "isFavorite": true
+}

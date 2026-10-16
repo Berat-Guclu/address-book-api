@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: address-book-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
