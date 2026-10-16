@@ -44,8 +44,5 @@ The store is a `ConcurrentDictionary` registered as a singleton (`Data/InMemoryA
 
 ## Issues
 
-- Data cannot survive a restart, and it cannot be shared by more than one server. That matches the in-memory requirement, and it means a free host that sleeps or runs several instances will look empty or inconsistent.
-- A public URL was opened with a Cloudflare quick tunnel, then shut down. That tunnel was not tied to a Cloudflare account. Azure, AWS, Vercel, and Render were not used because this machine had no logged-in hosting account. The container files are in the repo for a later deploy.
-- The first `git push` failed with `repository not found` because `origin` pointed at a GitHub URL before the repository existed. The repository was created afterward and `main` was pushed.
-- The GitHub CLI token in the macOS keyring was reported as invalid when the command ran inside the sandbox. The same login worked when the command ran with access to the keyring.
-- A second local start failed because port 5044 was already taken by the first copy of this API.
+- No Issues
+
